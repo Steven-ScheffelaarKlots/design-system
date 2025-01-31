@@ -1,16 +1,15 @@
-import Button from './button'; // Adjust the import path to your Button component
-import { fn } from '@storybook/test';
-
+import Button from "./button"; // Adjust the import path to your Button component
+import { fn } from "@storybook/test";
 
 // Default export that defines component metadata
 const buttonMeta = {
-  title: 'Components/Button',
+  title: "Components/Button",
   component: Button,
   parameters: {
-    layout: 'centered',
+    layout: "centered",
   },
   args: { onClick: fn() },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 };
 
 export default buttonMeta;
@@ -44,19 +43,19 @@ export const Focused = {
 };
 
 export const Pressed = {
-    args: {
-      children: "BUTTON",
+  args: {
+    children: "BUTTON",
+  },
+  parameters: {
+    pseudo: {
+      active: true,
     },
-    parameters: {
-      pseudo: {
-        active: true,
-      },
-    },
-  };
+  },
+};
 
-  export const Disabled = {
-    args: {
-      children: "BUTTON",
-      disabled: true,
-    },
-  };
+export const Disabled = {
+  args: {
+    children: "BUTTON",
+    disabled: true,
+  },
+};

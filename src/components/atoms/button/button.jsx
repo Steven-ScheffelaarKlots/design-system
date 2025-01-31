@@ -1,13 +1,8 @@
-import React from 'react';
-import { useStyles } from './style';
-import PropTypes from 'prop-types';
+import React from "react";
+import { useStyles } from "./style";
+import PropTypes from "prop-types";
 
-
-
-const Button = ({
-  children,
-  ...props
-}) => {
+const Button = ({ children, ...props }) => {
   const classes = useStyles();
 
   return (
@@ -16,7 +11,6 @@ const Button = ({
     </button>
   );
 };
-
 
 Button.propTypes = {
   /** Is the button disabled */
