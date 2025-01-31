@@ -1,6 +1,4 @@
-import { typography } from "storybook/internal/theming";
-
-export const theme = {
+const theme = {
   button: {
     colors: {
       active: {
@@ -38,3 +36,5 @@ export const theme = {
     elevation03: "0px 6px 12px 1px #00161F3D",
   },
 };
+
+export default theme;
