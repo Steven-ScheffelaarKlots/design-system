@@ -7,7 +7,7 @@ const Button = ({ children, ...props }) => {
 
   return (
     <button className={classes.button} {...props}>
-      {children}
+      {props.label || children}
     </button>
   );
 };
@@ -17,6 +17,8 @@ Button.propTypes = {
   disabled: PropTypes.bool,
   /** Button click function */
   onClick: PropTypes.func,
+  /** Button text, can also pass in as children */
+  label: PropTypes.string,
 };
 
 Button.defaultProps = {
