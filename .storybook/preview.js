@@ -1,7 +1,7 @@
 /** @type { import('@storybook/react').Preview } */
 
 import { ThemeProvider } from 'react-jss';
-import { theme } from '../src/themes/base-theme/base-theme'
+import theme from '../src/themes/base-theme/base-theme'
 
 const preview = {
   parameters: {
