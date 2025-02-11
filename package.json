@@ -1,7 +1,7 @@
 {
-  "name": "design-system",
+  "name": "@stevenscheffelaarklots/design-system",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
@@ -17,6 +17,9 @@
     "react-jss": "^10.10.0"
   },
   "devDependencies": {
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3",
     "@chromatic-com/storybook": "^3.2.4",
     "@eslint/eslintrc": "^3",
     "@storybook/addon-essentials": "^8.5.2",
@@ -26,6 +29,7 @@
     "@storybook/nextjs": "^8.5.2",
     "@storybook/react": "^8.5.2",
     "@storybook/test": "^8.5.2",
+    "babel-loader": "^9.2.1",
     "eslint": "^9",
     "eslint-config-next": "15.1.6",
     "eslint-plugin-storybook": "^0.11.2",
